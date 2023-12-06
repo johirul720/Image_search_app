@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.searchBar{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+.searchBar input{
+    width: 70%;
+    height: 36px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.searchBar input:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.searchBar button{
+    width: 20%;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: rgb(6, 167, 103);
+    color: #fff;
+    cursor: pointer;
+}
+.searchResults{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.searchResults .searchResult{
+    text-align: center;
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px #b7b7b7;
+}
+
+.searchResults .searchResult img{
+    width: 100%;
+    height: 250px;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.2s;
+}
+.searchResults .searchResult img:hover{
+    opacity: 0.8;
+}
+.searchResults .searchResult a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+}
+#show-more-btn{
+    background-color: rgb(6, 168, 209);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    outline: 0;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
